@@ -1,11 +1,10 @@
 #! /bin/bash
 
-# usage: ./convert.sh srcFormat destFormat dimensions srcFolder destFolder
+# usage: ./convert.sh srcFormat destFormat srcFolder destFolder
 srcFormat=$1
 destFormat=$2
-dimensions=$3
-srcDir=$4
-destDir=$5
+srcDir=$3
+destDir=$4
 options=""
 
 function convert_files() {
@@ -21,7 +20,7 @@ function convert_files() {
 
 if [ $destFormat ==  "mov" ]
 then
-	options="-c:v dnxhd -c:a pcm_s16le -s $dimensions -b:v 75M -pix_fmt yuv422p"
+	options="-c:v dnxhd -c:a pcm_s16le -s -b:v 75M -pix_fmt yuv422p"
 	convert_files
 else
 	echo "Destination format not supported yet..."
