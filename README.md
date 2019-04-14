@@ -11,7 +11,7 @@ Example: `./convert.sh mp4 mov ./mp4 ./mov`
 * `SourceFormat` allows to specify which particular files you want to convert. But you can put `*` if you want to convert all files. Just be careful to check that all files are video / audio files.
 * `DestinationFormat` is the format you want to convert your files
 * `Sourcefolder` is the folder where all your files to convert are located
-* `Destinationfolder` is the folder where you want your converted file to be (it can be the same folder)
+* `Destinationfolder` is the folder where you want your converted files to be (it can be the same folder)
 
 **For now, it can only converts to .mov files.**
 
